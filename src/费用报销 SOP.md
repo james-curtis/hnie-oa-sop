@@ -6,18 +6,10 @@
 
 ## 办理步骤
 ```mermaid
-        graph LR
-        start[开始] --> input[输入A,B,C]
-        input --> conditionA{A是否大于B}
-        conditionA -- YES --> conditionC{A是否大于C}
-        conditionA -- NO --> conditionB{B是否大于C}
-        conditionC -- YES --> printA[输出A]
-        conditionC -- NO --> printC[输出C]
-        conditionB -- YES --> printB[输出B]
-        conditionB -- NO --> printC[输出C]
-        printA --> stop[结束]
-        printC --> stop
-        printB --> stop
+flowchart TB
+    A[经办人] --> | 登记 and 核验信息 | B[双创学院 - 符雅芬]
+    B --> | 部门行政主管签字 and 发票签字 | C[双创院长 - 李珍辉]
+    C --> | 提交材料 | D[学校财务处]
 ```
 
 ## 差旅费
@@ -47,6 +39,8 @@
 - [A4版-湖南工程学院报账审批单](https://cwc.hnie.edu.cn/info/1154/1644.htm)
 
 左下角的 `事项说明` 要填写报销的项目，比如 `09010001 大学生创新创业训练计划`
+
+每张发票都需要 `证明人` 和 `经办人` 在发票 `背面` 签字确认
 
 ## 其他事项
 - 填报单位
